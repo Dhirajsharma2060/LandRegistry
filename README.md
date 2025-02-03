@@ -72,4 +72,3 @@ some thing like this
 
 ### 📝 License
 This project is MIT Licensed. Feel free to use and modify it.
-# LandRegistry
