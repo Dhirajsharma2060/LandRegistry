@@ -9,21 +9,45 @@
 <body>
     <div class="container">
         <h1>Land Registration</h1>
+
+        <!-- Land Registration Form -->
         <form id="landForm">
             <input type="text" id="location" placeholder="Location" required />
             <input type="number" id="area" placeholder="Area (in sqm)" required />
             <button type="submit">Register Land</button>
         </form>
 
+        <!-- Land Details Section -->
         <div id="landInfo">
             <h2>Land Details</h2>
             <input type="number" id="landId" placeholder="Enter Land ID" />
             <button onclick="fetchLand()">Get Land Info</button>
             <p id="landDetails"></p>
         </div>
+
+        <!-- Ownership Transfer Form -->
+        <div id="transferForm" style="display: none;">
+            <h2>Transfer Ownership</h2>
+            <input type="text" id="landIdToTransfer" placeholder="Land ID to Transfer" disabled />
+            <input type="text" id="newOwnerAddress" placeholder="New Owner Address" required />
+            <button onclick="transferOwnership(event)">Transfer Ownership</button>
+        </div>
+
+        <!-- Example Button to Initiate Ownership Transfer -->
+        <!-- This will trigger the transfer form and fill in the landId automatically -->
+        <div id="landActions">
+            <!-- Dynamically generated list of lands will have transfer buttons -->
+            <!-- Example Land: -->
+            <!-- <div>
+                <button onclick="initiateOwnershipTransfer(1)">Transfer Ownership for Land ID 1</button>
+            </div> -->
+        </div>
+
     </div>
 
+    <!-- Include Web3.js -->
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <!-- Link to the JavaScript file -->
     <script type="module" src="app.js"></script>
 </body>
 </html>
