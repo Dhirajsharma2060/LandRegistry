@@ -70,5 +70,9 @@ http://127.0.0.1:5501/test/index.html#
 
 some thing like this 
 
+### 7. Screen Shot
+![Land Registry DApp Screenshot](./Screenshot%202025-02-04%20225145.png)
+![Land Registry DApp Ownership Screenshot](./Screenshot%202025-02-04%20225159.png)
+
 ### 📝 License
 This project is MIT Licensed. Feel free to use and modify it.
